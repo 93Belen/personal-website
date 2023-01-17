@@ -1,17 +1,18 @@
-import { Container, Dropdown } from "react-bootstrap";
+import { Container, Dropdown, Navbar } from "react-bootstrap";
 import "./nav.css";
 import "../../index.css";
 import { NavLink } from "react-router-dom";
+import {GiHamburgerMenu} from 'react-icons/gi'
 
 export const Nav = () => {
     return (
+        <Navbar id='navbar'>
         <Container id='nav'>
-        <Dropdown>
-          <Dropdown.Toggle variant="success" id="dropdown-basic">
-            Menu
+        <Dropdown drop='start'>
+          <Dropdown.Toggle id="dropdown-basic">
+          <GiHamburgerMenu />
           </Dropdown.Toggle>
-    
-          <Dropdown.Menu>
+          <Dropdown.Menu id='dropdown-card'>
             <Dropdown.Item><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/"
@@ -51,5 +52,6 @@ export const Nav = () => {
           </Dropdown.Menu>
         </Dropdown>
         </Container>
+        </Navbar>
       );
 }

@@ -3,5 +3,44 @@
 #nav {
     height: 10vh;
     align-self: flex-end;
-    
+}
+#navbar {
+    float: right;
+}
+
+#dropdown-basic{
+    font-size: 3rem;
+    background: var(--black);
+    border: none;
+    float: right;
+    margin: 10%;
+    background: var(--black);
+    width: 20vw;
+}
+
+.navLinkAct {
+    color: var(--orange);
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+.navLink {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+#dropdown-card {
+    background: var(--black);
+    width: 90vw;
+    height: 90vh;
+    padding: 10%;
+    margin: 5%;
+    text-align: center;
+    background: rgba(27, 27, 27, 0.8);
+    backdrop-filter: blur(2px);
+    border-radius: 5px;
+    border: none;
 }

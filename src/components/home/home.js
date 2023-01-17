@@ -10,7 +10,7 @@ export const Home = () => {
     return (
         <Container id='home'>
             <Row id='title'>
-                <Col><h1 id='h1'>Hi, I'm <span className='span'>Belen</span><br/>
+                <Col><h1 id='h1'>Hi, I'm <span className='span'>Belén</span><br/>
                 a <span className='span'>Software Developer</span></h1></Col>
             </Row>
             <Row id='text'>

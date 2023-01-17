@@ -130,8 +130,8 @@ export const Cv = () => {
         <p>Spain</p>
 
         <h3>LaunchCode Web Development Course</h3>
-        <p>Front-end: JavaScript, Angular and TypeScripa</p>
-        <p>Back-end: Java, Thymeleaf and Spring</p>
+        <p>Front-end: JavaScript, Angular and TypeScripat</p>
+        <p id='last-sentenc'>Back-end: Java, Thymeleaf and Spring</p>
             </Container>
             <Image id='rocket' src={require('../../imgs/rocket.png')} />
         </Container>

@@ -1,4 +1,4 @@
-import { Button, Image } from "react-bootstrap"
+import { Button } from "react-bootstrap"
 import "./buttons.css";
 
 export const Linkedin = () => {

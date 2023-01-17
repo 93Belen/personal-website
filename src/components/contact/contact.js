@@ -3,6 +3,7 @@ import '../../index.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import { GitHub } from '../buttons/github';
 import { Linkedin } from '../buttons/linkedin';
+import { Link } from 'react-router-dom';
 
 export const Contact = () => {
     return (
@@ -13,13 +14,9 @@ export const Contact = () => {
                     <p>93bgarciamartinez@gmail.com</p>
                     <h2>Phone</h2>
                     <p>913-274-0955</p>
-                </Container>
-                <Container id='button-container'>
-                    <Row>
-                        <Col xs={6} lg={6}><Linkedin /></Col>
-                        <Col xs={6} lg={6}><GitHub /></Col>
-                    </Row>  
-                </Container>               
+                    <Linkedin />
+                    <GitHub />
+                </Container>           
             </Container>
         </Container>
     )
