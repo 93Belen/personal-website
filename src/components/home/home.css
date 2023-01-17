@@ -1,0 +1,31 @@
+
+
+#home{
+    overflow: hidden;
+    height: 90%;
+    width: 100%;
+}
+
+#img-me {
+    position: fixed;
+    bottom:0px;
+    left: 0px;
+    width: 100%;
+    
+}
+
+
+#title {
+    height: 20%;
+    align-content: center;
+}
+
+#text {
+    height: 20%;
+    align-content: center;
+}
+
+#githubRow {
+    height: 20%;
+    align-content: center;
+}

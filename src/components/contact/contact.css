@@ -1,0 +1,38 @@
+#contact{
+    height: 90vh;
+    width: 100vw;
+    margin-left: 0;
+    background: url('../../imgs/saturno.png') no-repeat;
+    background-size: 55vh;
+    padding-top: 5%;
+}
+
+#contact-info{
+    background: rgba(27, 27, 27, 0.4);
+    backdrop-filter: blur(0.5px); 
+    height: 100%;
+    width: 100vw;
+    color: var(--white);
+    text-align: left;
+}
+
+#button-container {
+    text-align: center;
+    height: 40%;
+    width: 100%;
+    margin-left: -2%;
+    padding: 20% 0;
+}
+
+#text-container {
+    height: 40%;
+}
+
+#text-container p{
+    font-size: 2rem;
+    margin: 7% 0;
+}
+
+#text-container h2 {
+    font-size: 2.5rem;
+}

@@ -1,0 +1,50 @@
+#work {
+    height: 90vh;
+    width: 100vw;
+    text-align: left;
+    background: url('../../imgs/moon.png') no-repeat center/cover;
+    background-size: 150vw;
+}
+
+#blur {
+    background: rgba(27, 27, 27, 0.3);
+    backdrop-filter: blur(0.5px);
+    height: 90vh;
+    width: 95vw;
+    overflow: scroll;
+
+    padding: 7% 5% 200px 5%;
+}
+
+#america-img {
+    position: fixed;
+    bottom:0px;
+    left: 0px;
+    width: 100%;
+}
+#name {
+    height: 10%;
+}
+#blur h1{
+    font-size: 3rem;
+    color: var(--orange);
+}
+#blur p {
+    font-size: 2rem;
+}
+#blur a {
+    margin: 5%
+}
+#media {
+    height: 30%;
+    width: 80%;
+    background-color: wheat;
+    margin-left: 9%;
+    margin-top: 9%;
+    margin-bottom: 10%;
+}
+
+#githubButton {
+    margin: 10% 0;
+    text-align: center;
+}

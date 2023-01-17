@@ -1,0 +1,25 @@
+#about{
+    height: 90vh;
+    width: 100vw;
+    overflow: scroll;
+    padding-bottom: 150px;
+    background: url("../../imgs/astronaut.png") no-repeat center/cover;
+
+}
+#text-container {
+    height: 90vh;
+    width: 94vw;
+    backdrop-filter: blur(0.5px); 
+    color: var(--white);
+    font-size: 2.5rem;
+    text-align: left;
+    font-weight: 500;
+    padding: 2rem 1rem;
+    background: rgba(27, 27, 27, 0.4);
+
+}
+
+#text-container p {
+    margin: 12% 0;
+}
+
