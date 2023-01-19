@@ -1,57 +1,51 @@
-import { Container, Dropdown, Navbar } from "react-bootstrap";
+import { Container, Dropdown, Nav, Link, Navbar } from "react-bootstrap";
 import "./nav.css";
 import "../../index.css";
 import { NavLink } from "react-router-dom";
 import {GiHamburgerMenu} from 'react-icons/gi'
 
-export const Nav = () => {
+export const NavElement = () => {
     return (
-        <Navbar id='navbar'>
-        <Container id='nav'>
-        <Dropdown drop='start'>
-          <Navb.Toggle id="dropdown-basic">
-          <GiHamburgerMenu />
-          </Dropdown.Toggle>
-          <Dropdown.Menu id='dropdown-card'>
-            <Dropdown.Item><NavLink
+      <Navbar id='navbar' expand="md">
+      <Container>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" >
+          <GiHamburgerMenu id='icon' />
+        </Navbar.Toggle>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav id='nav-card' className="me-auto">
+             <Nav.Link><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/"
           >
             Home
-          </NavLink></Dropdown.Item>
-            <Dropdown.Item><NavLink
+          </NavLink></Nav.Link>
+             <Nav.Link><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/about"
           >
             About
-          </NavLink></Dropdown.Item>
-            <Dropdown.Item>
-            <NavLink
+          </NavLink></Nav.Link>
+             <Nav.Link><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/work"
           >
             Work
-          </NavLink>
-            </Dropdown.Item>
-            <Dropdown.Item>
-            <NavLink
+          </NavLink></Nav.Link>
+             <Nav.Link><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/cv"
           >
             Cv
-          </NavLink>
-            </Dropdown.Item>
-            <Dropdown.Item>
-            <NavLink
+          </NavLink></Nav.Link>
+             <Nav.Link><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/contact"
           >
             Contact
-          </NavLink>
-            </Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
-        </Container>
-        </Navbar>
+          </NavLink></Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
       );
 }
