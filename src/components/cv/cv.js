@@ -133,6 +133,7 @@ export const Cv = () => {
         <p>Front-end: JavaScript, Angular and TypeScripat</p>
         <p id='last-sentenc'>Back-end: Java, Thymeleaf and Spring</p>
             </Container>
+            <Image id='astronaut' src={require('../../imgs/astronaut.png')} />
             <Image id='rocket' src={require('../../imgs/rocket.png')} />
         </Container>
     )
