@@ -1,15 +1,18 @@
 #about{
     height: 90vh;
+    max-width: 100vw;
     width: 100vw;
     overflow: scroll;
-    padding: 10px 0px 400px 0px;
-    margin-bottom: 500px;
+    padding: 10px auto;
+    margin: 0 auto;
+    align-self: center;
+    justify-self: center;
     background: url("../../imgs/astronaut.png") no-repeat center/cover;
 
 }
 #text-container {
     height: 90vh;
-    width: 94vw;
+    width: auto;
     backdrop-filter: blur(0.5px); 
     color: var(--white);
     font-size: 2.5rem;
@@ -17,8 +20,6 @@
     font-weight: 500;
     padding: 2rem 1rem;
     background: rgba(27, 27, 27, 0.4);
-    margin-bottom: 500px;
-
 }
 
 #text-container p {

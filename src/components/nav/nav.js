@@ -9,7 +9,7 @@ export const Nav = () => {
         <Navbar id='navbar'>
         <Container id='nav'>
         <Dropdown drop='start'>
-          <Dropdown.Toggle id="dropdown-basic">
+          <Navb.Toggle id="dropdown-basic">
           <GiHamburgerMenu />
           </Dropdown.Toggle>
           <Dropdown.Menu id='dropdown-card'>

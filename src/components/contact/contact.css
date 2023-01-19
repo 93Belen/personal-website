@@ -4,6 +4,7 @@
     background: url('../../imgs/saturno.png') no-repeat center/cover;
     background-size: 55vh;
     padding: 70px 0px 0px 0px;
+    max-width: 100vw;
 }
 
 #contact-info{

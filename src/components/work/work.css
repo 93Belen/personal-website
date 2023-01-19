@@ -4,6 +4,7 @@
     text-align: left;
     background: url('../../imgs/moon.png') no-repeat center/cover;
     background-size: 150vw;
+    max-width: 100vw;
 }
 
 #blur {
