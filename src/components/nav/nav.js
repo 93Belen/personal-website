@@ -6,38 +6,38 @@ import {GiHamburgerMenu} from 'react-icons/gi'
 
 export const NavElement = () => {
     return (
-      <Navbar id='navbar' expand="md">
+      <Navbar fixed='top' collapseOnSelect id='navbar' expand="md">
       <Container>
         <Navbar.Toggle aria-controls="basic-navbar-nav" >
           <GiHamburgerMenu id='icon' />
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav id='nav-card' className="me-auto">
-             <Nav.Link><NavLink
+             <Nav.Link eventKey='1'><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/"
           >
             Home
           </NavLink></Nav.Link>
-             <Nav.Link><NavLink
+             <Nav.Link eventKey='2'><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/about"
           >
             About
           </NavLink></Nav.Link>
-             <Nav.Link><NavLink
+             <Nav.Link eventKey='3'><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/work"
           >
             Work
           </NavLink></Nav.Link>
-             <Nav.Link><NavLink
+             <Nav.Link eventKey='4'><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/cv"
           >
             Cv
           </NavLink></Nav.Link>
-             <Nav.Link><NavLink
+             <Nav.Link eventKey='5'><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/contact"
           >
