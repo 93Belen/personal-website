@@ -30,7 +30,12 @@
     font-weight: 500;
     padding: 1rem 0;
 }
-
+.navLink:hover{
+    color: var(--orange);
+}
+#basic-navbar-nav a:hover{
+    color: var(--orange);
+}
 
 
 @media screen and (min-width: 768px) {
@@ -41,7 +46,7 @@
         background: none;
         backdrop-filter: none;
         position: relative;
-        top: 75vh;
+        top: 68vh;
     }
 
     .navLink {

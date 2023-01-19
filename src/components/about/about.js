@@ -1,11 +1,11 @@
-import { Container } from "react-bootstrap"
+import { Container, Image } from "react-bootstrap"
 import './about.css'
 import '../../index.css';
 
 export const About = () => {
     return (
         <Container id='about'>
-            <Container id='text-container'>
+            <Container id='textContainer'>
                 <p>A few years ago, I moved to <span className='span'>London</span>, not knowing a word of English and having almost no work experience.</p>
                 <p>Two years later, I was <span className='span'>fluent in English</span> and had developed a strong work ethic and a career.</p>
                 
@@ -19,6 +19,7 @@ export const About = () => {
                 <p>I have completed a couple of courses, but most importantly, I spend endless hours learning, coding, and researching.</p>
                 <p><span id='last-sentence' className='span'>I just love building stuff</span>.</p>
             </Container>
+            <Image id='img-amercia' src={require('../../imgs/america.png')} />
         </Container>
     )
 }

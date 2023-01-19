@@ -2,16 +2,17 @@
     height: 90vh;
     max-width: 100vw;
     width: 100vw;
-    overflow: scroll;
+    overflow-y: scroll;
     padding: 10px auto;
-    margin: 0 auto;
+    margin: 0;
     align-self: center;
     justify-self: center;
     background: url("../../imgs/astronaut.png") no-repeat center/cover;
 
 }
-#text-container {
-    height: 90vh;
+#textContainer {
+    min-height: 90vh;
+    height: fit-content;
     width: auto;
     backdrop-filter: blur(0.5px); 
     color: var(--white);
@@ -30,3 +31,39 @@
     padding-bottom: 400px;
 }
 
+#img-amercia{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    #about {
+        height: 100vh;
+        max-height: 100vh;
+        padding: 5% 5%;
+        background: var(--black);
+        overflow-y: hidden;
+    }
+    #textContainer {
+        height: 70vh;
+        font-size: 2.6rem;
+        text-align: left;
+        font-weight: 400;
+        padding: 2rem 1rem;
+    }
+    
+    #text-container p {
+        margin: 0;
+    }
+    
+    #last-sentence {
+        padding-bottom: 0px;
+    }
+    #img-amercia{
+        position: fixed;
+        bottom:0px;
+        left: 60vw;
+        width: 100%;
+        max-width: 500px;
+        display: block;
+    }
+}
