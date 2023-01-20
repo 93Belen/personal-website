@@ -1,4 +1,4 @@
-import { Container, Dropdown, Nav, Link, Navbar } from "react-bootstrap";
+import { Container, Dropdown, Nav, Link, Navbar, Col } from "react-bootstrap";
 import "./nav.css";
 import "../../index.css";
 import { NavLink } from "react-router-dom";
@@ -13,30 +13,30 @@ export const NavElement = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav id='nav-card' className="me-auto">
-             <Nav.Link eventKey='1'><NavLink
+          <Col md={{order: '5'}}><Nav.Link eventKey='1'><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/"
           >
             Home
-          </NavLink></Nav.Link>
-             <Nav.Link eventKey='2'><NavLink
+          </NavLink></Nav.Link></Col>
+          <Col md={{order: '4'}}><Nav.Link eventKey='2'><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/about"
           >
             About
-          </NavLink></Nav.Link>
-             <Nav.Link eventKey='3'><NavLink
+          </NavLink></Nav.Link></Col> 
+          <Col md={{order: '3'}}><Nav.Link eventKey='3'><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/work"
           >
             Work
-          </NavLink></Nav.Link>
-             <Nav.Link eventKey='4'><NavLink
+          </NavLink></Nav.Link></Col>
+          <Col md={{order: '2'}}><Nav.Link eventKey='4'><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/cv"
           >
             Cv
-          </NavLink></Nav.Link>
+          </NavLink></Nav.Link></Col>            
              <Nav.Link eventKey='5'><NavLink
             className={({ isActive }) => (isActive ? "navLinkAct" : "navLink")}
             to="/contact"

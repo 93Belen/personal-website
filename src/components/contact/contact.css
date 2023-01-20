@@ -34,11 +34,26 @@
 
 #text-container h2 {
     font-size: 2.5rem;
+    color: var(--orange);
 }
 
 
 @media screen and (min-width: 768px) {
     #contact{
         background-size: 70vw;
+    }
+    #contact-info{
+        width: 75vw;
+        height: 50vh;
+        align-self: center;
+        justify-self: center;
+        margin: 5%;
+    }
+    #text-container h2{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    #text-container p {
+        font-size: 2.5rem;
     }
 }

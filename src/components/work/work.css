@@ -36,10 +36,9 @@
     margin: 5%
 }
 #media {
-    height: 30%;
-    width: 80%;
+    height: 80vw;
+    width: 80vw;
     background-color: wheat;
-    margin-left: 9%;
     margin-top: 9%;
     margin-bottom: 10%;
 }
@@ -47,4 +46,26 @@
 #githubButton {
     margin: 10% 0;
     text-align: center;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    #work{
+        max-height: 100vh;
+        height: 100vh;
+        background-size: 50vw;
+        overflow-y: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    #blur {
+        height: 100vh;
+        max-height: 100vh;
+        overflow-x: hidden;
+    }
+    #media {
+        max-width: 300px;
+        max-height: 300px;
+    }
 }

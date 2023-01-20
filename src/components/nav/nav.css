@@ -47,15 +47,18 @@
         transform: rotate(-90deg);
         background: none;
         backdrop-filter: none;
+        background-size: 0;
         position: relative;
         top: 68vh;
     }
 
     .navLink {
         margin: 0 2rem;
+        font-weight: 100;
     }
     .navLinkAct {
         margin: 0 2rem;
+        font-weight: 500;
     }
     
 }
