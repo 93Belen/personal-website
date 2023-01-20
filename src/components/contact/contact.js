@@ -15,7 +15,7 @@ export const Contact = () => {
                     <h2>Phone</h2>
                     <p>913-274-0955</p>
                     <Linkedin />
-                    <GitHub />
+                    <GitHub url={'https://github.com/93Belen'} />
                 </Container>           
             </Container>
         </Container>

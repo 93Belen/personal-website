@@ -16,7 +16,7 @@ export const Home = () => {
                 <Col className='d-flex' id='sub-text' xs={{span: 12}} md={{order: 'first', span: 4}}><p className='p'>From Ikea furniture<br/>
                 to full-stack web apps...<br/>
                 I just love building stuff</p>
-                <GitHub /></Col>
+                <GitHub url={'https://github.com/93Belen'} /></Col>
                 <Image id='img-me' src={require('../../imgs/me.png')} />
         </Row>
         </Container>
