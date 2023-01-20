@@ -24,13 +24,13 @@ function App() {
   return (
     <Container id='app'>
       <Col id='nav-col' sx={12} md={2}><NavElement /></Col>
-      <Routes>
+      <Col id='page-col' sx={12} md={10}><Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/about' element={<About />}></Route>
         <Route path='/contact' element={<Contact />}></Route>
         <Route path='/cv' element={<Cv />}></Route>
         <Route path='/work' element={<Work />}></Route>
-      </Routes>
+      </Routes></Col>    
     </Container>
   )
 }

@@ -11,9 +11,10 @@
     background: rgba(27, 27, 27, 0.3);
     backdrop-filter: blur(0.5px);
     height: 90vh;
-    width: 95vw;
+    width: 90vw;
     overflow: scroll;
-    padding: 7% 5% 200px 5%;
+    padding: 7% 5%;
+    margin-left: 0;
 }
 
 #name {
@@ -34,10 +35,31 @@
     margin: 10% 0;
     text-align: center;
 }
+#carousel {
+    width: 78vw;
+}
 
+#carousel .carousel-control-next-icon, #carousel .carousel-control-prev-icon{
+    display: none;
+}
 
 
 @media screen and (min-width: 768px) {
+    #blur p {
+        font-size: 2.5rem;
+        width: 85%;
+        padding-left: 15%;
+    }
+    #blur h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        padding-left: 15%;
+    }
+    #blur h2 {
+        font-size: 3rem;
+        font-weight: 500;
+        padding-left: 15%;
+    }
     #work{
         max-height: 100vh;
         height: 100vh;
@@ -49,7 +71,30 @@
     #blur {
         height: 100vh;
         max-height: 100vh;
+        width: 90vw;
         overflow-x: hidden;
+        display: flex;
+        padding: 0 auto;
     }
-
+    #tech-icons {
+        width: 80%;
+    }
+    
+    #carousel .carousel-control-next-icon, #carousel .carousel-control-prev-icon{
+        display: block;
+    }
+    #carousel {
+        width: 95vw;
+        align-self: center;
+        justify-self: center;
+    }
+    #carousel .carousel-control .carousel-control-next-icon {
+        right: 0;  
+        margin: 0;
+      }
+      
+      #carousel .carousel-inner .carousel-control .carousel-control-prev-icon {
+        left: 0;
+        margin: 0;
+      }
 }

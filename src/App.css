@@ -9,6 +9,8 @@
 
 
 
+
+
 @media screen and (min-width: 768px) {
     #app {
         display: grid;
@@ -18,6 +20,9 @@
     }
     #nav-col{
         width: 10vw;
+    }
+    #page-col{
+        margin-left: 0;
     }
 
 }

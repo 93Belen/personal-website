@@ -7,12 +7,12 @@ export const Work = () => {
     return (
         <Container id='work'>
             <Container id='blur'>
-            <Carousel interval={null}>
+            <Carousel id='carousel' variant='light' interval={null}>
       <Carousel.Item>
         <h1>Project Name 1</h1>
                 <p>Small description of the prject blablabla about the project and maybe I dont know, something else I cant think of anything right now</p>
                     <h2>Technologies</h2>
-                    <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+                    <Container id='tech-icons'><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
                     </a>
                     <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
@@ -29,7 +29,8 @@ export const Work = () => {
                     </a> 
                     <a href="https://redux.js.org" target="_blank" rel="noreferrer"> 
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> 
-                    </a>
+                    </a></Container>
+                    
                 <div id='githubButton'>
                     <GitHub url={'https://github.com/93Belen'} />
                 </div>
@@ -38,7 +39,7 @@ export const Work = () => {
         <h1>Project Name 2</h1>
                 <p>Small description of the prject blablabla about the project and maybe I dont know, something else I cant think of anything right now</p>
                     <h2>Technologies</h2>
-                    <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+                    <Container id='tech-icons'><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
                     </a>
                     <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
@@ -55,7 +56,7 @@ export const Work = () => {
                     </a> 
                     <a href="https://redux.js.org" target="_blank" rel="noreferrer"> 
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> 
-                    </a>
+                    </a></Container>
                 <div id='githubButton'>
                     <GitHub url={'https://github.com/93Belen'} />
                 </div>
@@ -64,7 +65,7 @@ export const Work = () => {
         <h1>Project Name 3</h1>
                 <p>Small description of the prject blablabla about the project and maybe I dont know, something else I cant think of anything right now</p>
                     <h2>Technologies</h2>
-                    <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+                    <Container id='tech-icons'><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
                     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
                     </a>
                     <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
@@ -81,7 +82,7 @@ export const Work = () => {
                     </a> 
                     <a href="https://redux.js.org" target="_blank" rel="noreferrer"> 
                         <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> 
-                    </a>
+                    </a></Container>
                 <div id='githubButton'>
                     <GitHub url={'https://github.com/93Belen'} />
                 </div>
