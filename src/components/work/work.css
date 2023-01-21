@@ -8,13 +8,13 @@
 }
 
 #blur {
-    background: rgba(27, 27, 27, 0.3);
+    background: rgba(27, 27, 27, 0.7);
     backdrop-filter: blur(0.5px);
     height: 90vh;
     width: 90vw;
     overflow: scroll;
-    padding: 7% 5%;
-    margin-left: 0;
+    padding: 7% 5% 200px 5%;
+    margin-left: 3%;
 }
 
 #name {
@@ -32,7 +32,8 @@
 }
 
 #githubButton {
-    margin: 10% 0;
+    margin: 5%;
+    padding-bottom: 25%;
     text-align: center;
 }
 #carousel {
@@ -42,9 +43,17 @@
 #carousel .carousel-control-next-icon, #carousel .carousel-control-prev-icon{
     display: none;
 }
+#blur h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--orange);
+}
 
 
 @media screen and (min-width: 768px) {
+    #githubButton{
+        padding-bottom: 0;
+    }
     #blur p {
         font-size: 2.5rem;
         width: 85%;
@@ -58,7 +67,7 @@
     #blur h2 {
         font-size: 3rem;
         font-weight: 500;
-        padding-left: 15%;
+        padding-left: 3%
     }
     #work{
         max-height: 100vh;
@@ -70,14 +79,14 @@
     }
     #blur {
         height: 100vh;
-        max-height: 100vh;
         width: 90vw;
         overflow-x: hidden;
         display: flex;
-        padding: 0 auto;
+        padding: 500px 0;
     }
     #tech-icons {
-        width: 80%;
+        width: 70%;
+        margin-top: 2%;
     }
     
     #carousel .carousel-control-next-icon, #carousel .carousel-control-prev-icon{
