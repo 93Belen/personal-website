@@ -11,15 +11,23 @@
     position: fixed;
     bottom:0px;
     right: 20px;
+    max-width: 500px;
+    margin: 0;
+    height: auto;
+    width: auto;
 }
 #astronaut {
     position: fixed;
     top: 10px;
     right: 20px;
     display: none;
+    max-width: 700px;
+    margin: 0;
+    height: auto;
+    width: auto;
 }
 
-#cv-text a img{
+img{
     width: 12%;
     height: 12%;
     margin: 4%;
@@ -45,6 +53,7 @@
 #last-sentenc{
     padding-bottom: 150px;
 }
+
 
 @media screen and (min-width: 768px) {
     #cv{
