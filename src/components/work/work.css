@@ -49,15 +49,30 @@
     color: var(--orange);
 }
 
+#list {
+    font-size: 2rem;
+}
+#disclaimer{
+    color: var(--orange);
+}
+
 
 @media screen and (min-width: 768px) {
+
     #githubButton{
         padding-bottom: 0;
+        padding-top: 0;
+        margin: 0;
     }
     #blur p {
         font-size: 2.5rem;
         width: 85%;
         padding-left: 15%;
+    }
+    #list {
+        font-size: 2.5rem;
+        width: 90%;
+        padding-left: 20%;   
     }
     #blur h1 {
         font-size: 3.5rem;
@@ -93,6 +108,9 @@
         display: block;
     }
     #carousel {
+        margin-top: 100px;
+        height: 70vh;
+        min-height: fit-content;
         width: 95vw;
         align-self: center;
         justify-self: center;

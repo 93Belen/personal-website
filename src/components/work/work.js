@@ -91,7 +91,7 @@ export const Work = () => {
                 While the App tells you whether the conditions are good or not, for each hour of the same day.</p>
                     <Container id='tech-icons'>
                     <h2>Technologies</h2>
-                        {renderTech(['HTML', 'CSS', 'React', "React Native", "Figma", "Jest", "Git"])}
+                        {renderTech(['HTML', 'CSS', 'JavaScript', "React Native", "Figma", "Jest", "Git"])}
                     </Container>
                     
                 <div id='githubButton'>
@@ -99,55 +99,37 @@ export const Work = () => {
                 </div>
       </Carousel.Item>
       <Carousel.Item>
-        <h1>Project Name 2</h1>
-                <p>Small description of the prject blablabla about the project and maybe I dont know, something else I cant think of anything right now</p>
+        <h1>LegaAlly</h1>
+                <p>Website that provides you with information about abortion rights in the US, based in your particular case.
+                The back-end is built with Spring and Java, and calls a third party API. The front-end is built with React, Redux and React-router-dom.
+                </p>
+                <Container id='tech-icons'>
                     <h2>Technologies</h2>
-                    <Container id='tech-icons'><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
-                    </a>
-                    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
-                    </a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
-                    </a> 
-                    <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> 
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> 
-                    </a> 
-                    <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> 
-                        <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/>
-                    </a> 
-                    <a href="https://redux.js.org" target="_blank" rel="noreferrer"> 
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> 
-                    </a></Container>
+                        {renderTech(['HTML', 'CSS', "JavaScript", 'React', "Redux", "Figma", "Git", "Spring", "Java"])}
+                    </Container>
                 <div id='githubButton'>
-                    <GitHub url={'https://github.com/93Belen'} />
+                    <GitHub url={'https://github.com/stars/93Belen/lists/legally'} />
                 </div>
       </Carousel.Item>
        <Carousel.Item>
-        <h1>Project Name 3</h1>
-                <p>Small description of the prject blablabla about the project and maybe I dont know, something else I cant think of anything right now</p>
+        <h1>KCB</h1>
+                <p>Website where, as a business owner who is part of a minority, you can create an account and register your businesses into a database. 
+                    And as a non-business owner, you can create an account and look for minority owned businesses in the Kansas City area. 
+                    If you create an account you can also add businesses to your personal liked list. If you decide not to create an account, you will still be able to look for businesses, but wont be able to create a liked list.</p>
+                    <p id='disclaimer'>This is a group project and my responsabilities are:</p>
+                    <ul id='list'>
+                        <li>Authorization with Spring Security</li>
+                        <li>Designed front-end</li>
+                        <li>Built React and Redux</li>
+                        <li>Responsive design</li>
+                        <li>Some front-end functionality</li>
+                    </ul>
+                <Container id='tech-icons'>
                     <h2>Technologies</h2>
-                    <Container id='tech-icons'><a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
-                    </a>
-                    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
-                    </a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
-                    </a> 
-                    <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> 
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> 
-                    </a> 
-                    <a href="https://reactnative.dev/" target="_blank" rel="noreferrer"> 
-                        <img src="https://reactnative.dev/img/header_logo.svg" alt="reactnative" width="40" height="40"/>
-                    </a> 
-                    <a href="https://redux.js.org" target="_blank" rel="noreferrer"> 
-                        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> 
-                    </a></Container>
+                        {renderTech(['HTML', 'CSS', "JavaScript", 'React', "Redux", "Figma", "Git", "Spring", "Java", "MySQL"])}
+                    </Container>
                 <div id='githubButton'>
-                    <GitHub url={'https://github.com/93Belen'} />
+                    <GitHub url={'https://github.com/stars/93Belen/lists/kcb'} />
                 </div>
       </Carousel.Item>
     </Carousel>
