@@ -62,6 +62,7 @@ export const Work = () => {
                 case 'Postman':
                     icon = icons.postman;
                 break;
+                default:
                 
                 
             }
