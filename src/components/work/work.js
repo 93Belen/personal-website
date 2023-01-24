@@ -126,7 +126,7 @@ export const Work = () => {
                     </ul>
                 <Container id='tech-icons'>
                     <h2>Technologies</h2>
-                        {renderTech(['HTML', 'CSS', "JavaScript", 'React', "Redux", "Figma", "Git", "Spring", "Java", "MySQL"])}
+                        {renderTech(['HTML', 'CSS', "JavaScript", 'React', "Redux", "Figma", "Git", "Spring", "Java", "MySQL", "Postman"])}
                     </Container>
                 <div id='githubButton'>
                     <GitHub url={'https://github.com/stars/93Belen/lists/kcb'} />
