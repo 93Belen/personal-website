@@ -13,7 +13,7 @@ import { useEffect } from "react";
 function App() {
   const location = useLocation();
   useEffect(()=>{
-    if(location.pathname != '/' && window.innerWidth > 768){
+    if(location.pathname !== '/' && window.innerWidth > 768){
       document.getElementById('nav-col').style.background = 'var(--blue)'
     }
     else {
