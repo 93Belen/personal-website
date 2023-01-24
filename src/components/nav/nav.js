@@ -1,4 +1,4 @@
-import { Container, Dropdown, Nav, Link, Navbar, Col } from "react-bootstrap";
+import { Container, Nav, Navbar, Col } from "react-bootstrap";
 import "./nav.css";
 import "../../index.css";
 import { NavLink } from "react-router-dom";

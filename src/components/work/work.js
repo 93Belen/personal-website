@@ -1,9 +1,8 @@
 import './work.css';
 import '../../index.css';
-import { Container, Image, Row, Col, Carousel, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Container, Carousel, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import { GitHub } from '../buttons/github';
 import { icons } from '../icons/icons';
-import { render } from '@testing-library/react';
 
 export const Work = () => {
 

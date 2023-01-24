@@ -1,9 +1,8 @@
 import './contact.css';
 import '../../index.css';
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container} from 'react-bootstrap';
 import { GitHub } from '../buttons/github';
 import { Linkedin } from '../buttons/linkedin';
-import { Link } from 'react-router-dom';
 
 export const Contact = () => {
     return (
