@@ -7,7 +7,7 @@ export const About = () => {
     return (
         <Container id='about'>
             <Container id='textContainer'>
-            <h1 id='h1'> Hi! My name is Belen, a Software Developer from Spain, currently living in Kansas City.</h1>
+            <h1 id='h1'> Hi! My name is <span className='span'>Belen</span>, a <span className='span'>Software Developer</span> from Spain, currently living in <span className='span'>Kansas City</span>.</h1>
             <p>After studying <span className='span'>Philosophy</span> at the University of Granada, I moved to <span className='span'>London</span>.</p>
             <p>Looking for opportunities to better my life, I flee the economic struggles and work desert of <span className='span'>Spain</span>, not knowing a word of English and having almost no work experience.</p>
             <p>Two years later, I was fluent in <span className='span'>English</span> and had developed a strong work ethic and a career in retail.</p>

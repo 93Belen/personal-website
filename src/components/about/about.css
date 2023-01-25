@@ -28,9 +28,8 @@
 #textContainer p {
     margin: 1% 0;
 }
-#h1{
+#textContainer #h1{
     margin-bottom: 3rem;
-    color: var(--orange);
 }
 #last-sentence {
     padding-bottom: 400px;
@@ -60,10 +59,6 @@
         max-height: 100vh;
     }
     
-    #text-container p {
-        margin: 0;
-    }
-    
     #img-amercia{
         position: fixed;
         bottom:0px;
@@ -72,7 +67,7 @@
         max-width: 500px;
         display: block;
     }
-    #textContainer #h1{
+    #textContainer h1{
         font-size: 4rem;
     }
 }
