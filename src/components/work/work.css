@@ -12,7 +12,7 @@
     backdrop-filter: blur(0.5px);
     height: 90vh;
     width: 90vw;
-    overflow: scroll;
+    overflow-y: scroll;
     padding: 7% 5% 200px 5%;
     margin-left: 3%;
 }
