@@ -55,7 +55,17 @@
 #disclaimer{
     color: var(--orange);
 }
-
+.video-container {
+    width: 99%;
+    position:relative; 
+    display: none;
+}
+.video-container iframe{
+    width: 100%;
+    position: absolute; 
+    top:0; 
+    left: 0;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -126,4 +136,14 @@
         left: 0;
         margin: 0;
       }
+      .video-container iframe{
+        max-width: 500px;
+        max-height: 250px; 
+        margin-left: 25%;
+        margin-top: 2%;
+    }
+    .video-container{
+        display: block;
+        padding-bottom: 300px; 
+    }
 }
