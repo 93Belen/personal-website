@@ -25,7 +25,7 @@
     overflow-y: scroll;
 }
 
-#text-container p {
+#textContainer p {
     margin: 12% 0;
 }
 #h1{
@@ -72,7 +72,7 @@
         max-width: 500px;
         display: block;
     }
-    #text-container #h1{
+    #textContainer #h1{
         font-size: 4rem;
     }
 }
