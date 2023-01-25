@@ -72,7 +72,7 @@
         max-width: 500px;
         display: block;
     }
-    #h1{
+    #text-container #h1{
         font-size: 4rem;
     }
 }
