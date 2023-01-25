@@ -22,8 +22,8 @@ export const About = () => {
             <p>While, moving around the <span className='span'>world</span> and working in retail, have shaped me to be driven, learn fast, work hard, understand people, and be a team player.</p>
             <p>I have completed a couple of courses, but most importantly, I spend endless hours learning, coding, and researching.</p>
             <p><span className='span'>I just love building stuff</span>.</p>
-            <p>I am seeking a full-time position as a <span className='span'>React Developer</span>. Connect with my in LinkedIn!</p>
-            <Linkedin />
+            <p id='last-sentence'>I am seeking a full-time position as a <span className='span'>React Developer</span>. Connect with my in LinkedIn!
+            <Linkedin /></p>
             </Container>
             <Image id='img-amercia' src={require('../../imgs/america.png')} />
         </Container>
