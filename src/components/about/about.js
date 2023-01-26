@@ -11,11 +11,11 @@ export const About = () => {
             <p>After studying <span className='span'>Philosophy</span> at the University of Granada, I moved to <span className='span'>London</span>.</p>
             <p>Looking for opportunities to better my life, I flee the economic struggles and work desert of <span className='span'>Spain</span>, not knowing a word of English and having almost no work experience.</p>
             <p>Two years later, I was fluent in <span className='span'>English</span> and had developed a strong work ethic and a career in retail.</p>
-            <p>A few months before Covid hit, I moved back to my country, as many immigrants did, worried about the crisis that <span className='span'>Brexit</span> might bring to England.</p>
+            <p>A few months before Covid hit, I moved back to my country, as many other immigrants did, worried about <span className='span'>Brexit</span> its impact.</p>
             <p>During the Lock-down in Spain, I stumbled upon <span className='span'>coding</span>, and haven't stopped building projects since.</p>
-            <p>But, after a couple of years, desapointed with how little the economic situation had improved in <span className='span'>Spain</span>, 
+            <p>But, after a couple of years, hopeless again about the future of <span className='span'>Spain</span>, 
             and having to survive with little more than $600 a month, my husband and I moved to <span className='span'>America</span>, where he grew up.</p>
-            <p>Here, hard work pays off, and it has taken me little less than a year to prepare myself for a carreer in <span className='span'>Tech</span>.</p>
+            <p>Here, hard work pays off, and it has taken me little less than a year to get myself job ready for a carreer in <span className='span'>Tech</span>.</p>
             <p>Now, I see how my education in philosophy prepared me to understand <span className='span'>complex systems</span>, 
             find problems within them, and solve them by thinking <span className='span'>logically</span> and creatively.</p>
             <p>Becoming bilingual has made it easy for me to learn new <span className='span'>languages</span>.</p>
