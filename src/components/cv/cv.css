@@ -48,13 +48,34 @@
 #last-sentenc{
     padding-bottom: 150px;
 }
-
-
+#statement {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    font-weight: 600;
+    padding: 3%;
+    border: var(--orange) solid 1px;
+    border-radius: 20px;
+    width: 80vw;
+    text-align: center;
+}
+#cv-text a {
+    text-decoration: none;
+    align-self: center;
+}
 @media screen and (min-width: 768px) {
     #cv{
         height: 100vh;
         max-height: 100vh;
         padding: 6% 0%; 
+    }
+    #statement {
+        font-size: 3rem;
+        font-weight: 600;
+        padding: 2%;
+        border: var(--orange) solid 1px;
+        border-radius: 20px;
+        width: 40vw;
     }
     #cv-text h2{
         font-size: 3.5rem;

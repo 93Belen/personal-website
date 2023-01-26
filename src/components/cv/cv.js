@@ -1,31 +1,22 @@
 import './cv.css';
-import { Container, Image, Tooltip, OverlayTrigger } from 'react-bootstrap';
+import { Container, Image, Tooltip, OverlayTrigger, Button } from 'react-bootstrap';
 import '../../index.css';
 import { icons } from '../icons/icons';
+import { CvButton } from '../buttons/CvButton';
 
 export const Cv = () => {
 
     return (
         <Container id='cv'>
             <Container id='cv-text'>
+            <p id='statement'><span className='span'>Thank you for looking at my CV!</span>
+            I am currently looking for a position as a <span className='span'>React Developer</span>
+            <a href="../../imgs/cv-simple.pdf" download='BelenGarciaMartinez-resume.pdf'>
+                <CvButton />
+            </a>
+            </p>
             <h2 className='span'>Languages and Tools</h2>
             <p>
-                <OverlayTrigger
-                className='overlay'
-                placement='right'
-                delay={{ show: 250, hide: 400 }}
-                overlay={<Tooltip id="button-tooltip-2">HTML</Tooltip>}
-                >
-                    {icons.html}
-                </OverlayTrigger>
-                <OverlayTrigger
-                className='overlay'
-                placement='right'
-                delay={{ show: 250, hide: 400 }}
-                overlay={<Tooltip id="button-tooltip-2">CSS</Tooltip>}
-                >
-                    {icons.css}
-                </OverlayTrigger>
                 <OverlayTrigger
                 className='overlay'
                 placement='right'
@@ -38,17 +29,9 @@ export const Cv = () => {
                 className='overlay'
                 placement='right'
                 delay={{ show: 250, hide: 400 }}
-                overlay={<Tooltip id="button-tooltip-2">React</Tooltip>}
+                overlay={<Tooltip id="button-tooltip-2">React & React Native</Tooltip>}
                 >
                     {icons.react}
-                </OverlayTrigger>
-                <OverlayTrigger
-                className='overlay'
-                placement='right'
-                delay={{ show: 250, hide: 400 }}
-                overlay={<Tooltip id="button-tooltip-2">React Native</Tooltip>}
-                >
-                    {icons.reactNative}
                 </OverlayTrigger>
                 <OverlayTrigger
                 className='overlay'
@@ -57,6 +40,30 @@ export const Cv = () => {
                 overlay={<Tooltip id="button-tooltip-2">Redux</Tooltip>}
                 >
                     {icons.redux}
+                </OverlayTrigger>
+                <OverlayTrigger
+                className='overlay'
+                placement='right'
+                delay={{ show: 250, hide: 400 }}
+                overlay={<Tooltip id="button-tooltip-2">React-Bootstrap</Tooltip>}
+                >
+                    {icons.bootstrap}
+                </OverlayTrigger>
+                <OverlayTrigger
+                className='overlay'
+                placement='right'
+                delay={{ show: 250, hide: 400 }}
+                overlay={<Tooltip id="button-tooltip-2">Git</Tooltip>}
+                >
+                    {icons.git}
+                </OverlayTrigger>
+                <OverlayTrigger
+                className='overlay'
+                placement='right'
+                delay={{ show: 250, hide: 400 }}
+                overlay={<Tooltip id="button-tooltip-2">Figma</Tooltip>}
+                >
+                    {icons.figma}
                 </OverlayTrigger>
                 <OverlayTrigger
                 className='overlay'
@@ -94,38 +101,6 @@ export const Cv = () => {
                 className='overlay'
                 placement='right'
                 delay={{ show: 250, hide: 400 }}
-                overlay={<Tooltip id="button-tooltip-2">Git</Tooltip>}
-                >
-                    {icons.git}
-                </OverlayTrigger>
-                <OverlayTrigger
-                className='overlay'
-                placement='right'
-                delay={{ show: 250, hide: 400 }}
-                overlay={<Tooltip id="button-tooltip-2">React-Bootstrap</Tooltip>}
-                >
-                    {icons.bootstrap}
-                </OverlayTrigger>
-                <OverlayTrigger
-                className='overlay'
-                placement='right'
-                delay={{ show: 250, hide: 400 }}
-                overlay={<Tooltip id="button-tooltip-2">Figma</Tooltip>}
-                >
-                    {icons.figma}
-                </OverlayTrigger>
-                <OverlayTrigger
-                className='overlay'
-                placement='right'
-                delay={{ show: 250, hide: 400 }}
-                overlay={<Tooltip id="button-tooltip-2">Angular</Tooltip>}
-                >
-                    {icons.angular}
-                </OverlayTrigger>
-                <OverlayTrigger
-                className='overlay'
-                placement='right'
-                delay={{ show: 250, hide: 400 }}
                 overlay={<Tooltip id="button-tooltip-2">Jasmine</Tooltip>}
                 >
                     {icons.jasmine}
@@ -153,14 +128,6 @@ export const Cv = () => {
                 overlay={<Tooltip id="button-tooltip-2">Postman</Tooltip>}
                 >
                     {icons.postman}
-                </OverlayTrigger> 
-                <OverlayTrigger
-                className='overlay'
-                placement='right'
-                delay={{ show: 250, hide: 400 }}
-                overlay={<Tooltip id="button-tooltip-2">TypeScript</Tooltip>}
-                >
-                    {icons.typescript}
                 </OverlayTrigger> 
                  </p>
 
