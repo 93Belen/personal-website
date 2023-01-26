@@ -10,7 +10,7 @@ export const Cv = () => {
             <Container id='cv-text'>
             <p id='statement'><span className='span'>Thank you for checking out my CV!</span>
             I am currently looking for a position as a <span className='span'>React Developer</span>
-            <a rel="github" href="https://github.com/93Belen/Resume/blob/main/Belen-Garcia-Martinez-resume.pdf" target='_blank' download='Belen-Garcia-Martinez-resume.pdf'>
+            <a rel="noreferrer" href="https://github.com/93Belen/Resume/blob/main/Belen-Garcia-Martinez-resume.pdf" target='_blank' download='Belen-Garcia-Martinez-resume.pdf'>
                 Download my CV here
             </a>
             </p>
