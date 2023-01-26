@@ -9,12 +9,14 @@ export const Contact = () => {
         <Container id='contact'>
             <Container id='contact-info'>
                 <Container id='text-container'>
-                    <h2>Email</h2>
-                    <p>93bgarciamartinez@gmail.com</p>
-                    <h2>Phone</h2>
-                    <p>913-274-0955</p>
+                <p>&#128075; Hey! If you need a Software Developer pasionated about the craft<br/>
+                    I am currently looking for a position as a <span className='span'>React Developer</span><br/>
+                    Contact me via email at <span className='span'>93bgarciamartinez@gmail.com</span><br/>
+                    Call me at <span className='span'>913-274-0955</span><br/>
+                    And dont forget to <span className='span'>connect with me</span><br/>
                     <Linkedin />
                     <GitHub url={'https://github.com/93Belen'} />
+                </p>
                 </Container>           
             </Container>
         </Container>

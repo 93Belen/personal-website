@@ -1,16 +1,17 @@
 #contact{
-    height: 90vh;
+    min-height: 90vh;
     width: 100vw;
     background: url('../../imgs/saturno.png') no-repeat center/cover;
     background-size: 55vh;
-    padding: 70px 0px 0px 0px;
+    padding: 10px 0px 0px 0px;
     max-width: 100vw;
+    height: fit-content;
 }
 
 #contact-info{
     background: rgba(27, 27, 27, 0.4);
     backdrop-filter: blur(0.5px); 
-    height: 100vh;
+    height: fit-content;
     width: 90vw;
     color: var(--white);
     text-align: left;
@@ -18,18 +19,21 @@
 
 #button-container {
     text-align: center;
-    height: 50%;
+    height: fit-content;
     width: 100%;
     border: solid white 1px;
+    margin-bottom: 500px;
 }
 
 #text-container {
-    height: 100%;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 #text-container p{
     font-size: 2rem;
     margin: 4% 0;
+    font-weight: 500;
 }
 
 #text-container h2 {
@@ -50,12 +54,17 @@
         align-self: center;
         justify-self: center;
         margin: 5%;
+        padding-bottom: 0;
     }
     #text-container h2{
         font-size: 3rem;
         font-weight: 700;
     }
+    #text-container{
+        overflow-y: hidden;
+    }
     #text-container p {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        font-weight: 600;
     }
 }
