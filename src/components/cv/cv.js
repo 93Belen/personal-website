@@ -1,5 +1,5 @@
 import './cv.css';
-import { Container, Image, Tooltip, OverlayTrigger, Button } from 'react-bootstrap';
+import { Container, Image, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import '../../index.css';
 import { icons } from '../icons/icons';
 import { CvButton } from '../buttons/CvButton';
