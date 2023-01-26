@@ -4,7 +4,7 @@
     font-size: 2.5rem;
     font-weight: 500;
     margin: 5%;
-    color: var(--orange);
+    color: var(--white);
     border-color: var(--orange);
 }
 #github:hover{
@@ -32,12 +32,12 @@
     font-size: 2.5rem;
     font-weight: 500;
     margin: 5%;
-    color: var(--blue);
+    color: var(--white);
     border-color: var(--blue);
 }
 #linkedin:hover{
     background-color: var(--blue);
-    color: var(--black);
+    color: var(--white);
 }
 
 @media screen and (min-width: 768px) {
