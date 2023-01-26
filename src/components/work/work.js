@@ -1,6 +1,6 @@
 import './work.css';
 import '../../index.css';
-import { Container, Carousel, OverlayTrigger, Tooltip } from 'react-bootstrap';
+import { Container, Carousel, OverlayTrigger, Tooltip, Row, Col } from 'react-bootstrap';
 import { GitHub } from '../buttons/github';
 import { icons } from '../icons/icons';
 import { YouTube } from '../buttons/youtube';
@@ -88,8 +88,9 @@ export const Work = () => {
       <Carousel.Item>
         <h1>WalkKit Web & App</h1>
                 <p>Website and App that show you the best times to walk your dog based on the weather conditions.
-                The Web version gives you a sumary of the best times for the whole week, have a responsive design, and follows accesibility and best practices.
-                While the App tells you whether the conditions are good or not, for each hour of the same day.</p>
+                The Web version is built with Vanilla JavaScript, and it gives you a sumary of the best times for the whole week, have a responsive design, and follows accesibility and best practices.
+                While the App is built with React Native, and it tells you whether the conditions are good or not, for each hour of the same day.</p>
+                <p><span className='span'>Check out the video below</span> to see the web version in action. In this video I explain how I made it, the problems that I encountered, how I solved them, and what I learned from them.</p>
                     <Container id='tech-icons'>
                     <h2>Technologies</h2>
                         {renderTech(['HTML', 'CSS', 'JavaScript', "React Native", "Figma", "Jest", "Git"])}
@@ -97,16 +98,19 @@ export const Work = () => {
                     <Container className='video-container'>
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6LPBX8z4vxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </Container>
-                <div id='githubButton'>
-                    <YouTube url="https://youtu.be/6LPBX8z4vxE" />
-                    <GitHub url={'https://github.com/stars/93Belen/lists/walkkit-web-app'} />
-                </div>
+                <Container id='githubButton'>
+                    <Col>
+                        <Row><YouTube url="https://youtu.be/6LPBX8z4vxE" /></Row>
+                        <Row><GitHub url={'https://github.com/stars/93Belen/lists/walkkit-web-app'} /></Row>
+                    </Col>
+                </Container>
       </Carousel.Item>
       <Carousel.Item>
         <h1>LegaAlly</h1>
                 <p>Website that provides you with information about abortion rights in the US, based in your particular case.
                 The back-end is built with Spring and Java, and calls a third party API. The front-end is built with React, Redux and React-router-dom.
                 </p>
+                <p><span className='span'>Check out the video below</span> to see this project in action. In this video I explain how I made it, the problems that I encountered, how I solved them, and what I learned from them.</p>
                 <Container id='tech-icons'>
                     <h2>Technologies</h2>
                         {renderTech(['HTML', 'CSS', "JavaScript", 'React', "Redux", "Figma", "Git", "Spring", "Java"])}
@@ -114,10 +118,12 @@ export const Work = () => {
                     <Container className='video-container'>
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6LPBX8z4vxE?start=212" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </Container>
-                <div id='githubButton'>
-                    <YouTube url='https://youtu.be/6LPBX8z4vxE?t=213' />
-                    <GitHub url={'https://github.com/stars/93Belen/lists/legally'} />
-                </div>
+                <Container id='githubButton'>
+                    <Col>
+                        <Row><YouTube url='https://youtu.be/6LPBX8z4vxE?t=213' /></Row>
+                        <Row><GitHub url={'https://github.com/stars/93Belen/lists/legally'} /></Row>
+                    </Col>       
+                </Container>
       </Carousel.Item>
        <Carousel.Item>
         <h1>KCB</h1>
@@ -136,9 +142,12 @@ export const Work = () => {
                     <h2>Technologies</h2>
                         {renderTech(['HTML', 'CSS', "JavaScript", 'React', "Redux", "Figma", "Git", "Spring", "Java", "MySQL", "Postman"])}
                     </Container>
-                <div id='githubButton'>
-                    <GitHub url={'https://github.com/stars/93Belen/lists/kcb'} />
-                </div>
+                <Container id='githubButton'>
+                    <Col>
+                    <Row><GitHub url={'https://github.com/stars/93Belen/lists/kcb'} /></Row>
+                    </Col>
+                    
+                </Container>
       </Carousel.Item>
     </Carousel>
             </Container>

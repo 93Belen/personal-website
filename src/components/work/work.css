@@ -32,7 +32,7 @@
 }
 
 #githubButton {
-    margin: 5%;
+    margin: 5% 0 5% 25%;
     padding-bottom: 25%;
     text-align: center;
 }
@@ -67,12 +67,16 @@
     left: 0;
 }
 
-@media screen and (min-width: 768px) {
 
-    #githubButton{
+@media screen and (min-width: 768px) {
+    #carousel .carousel-indicators {
+        display: none
+    }
+    
+    #githubButton {
+        margin: 0 0 2% 40%;
         padding-bottom: 0;
-        padding-top: 0;
-        margin: 0;
+
     }
     #blur p {
         font-size: 2.5rem;

@@ -19,7 +19,7 @@
     font-weight: 500;
     color: var(--white);
     border-color: #d40909;
-    margin-left: 25%;
+    margin: 5%;
 }
 #youtube:hover{
     background-color: #d40909;
