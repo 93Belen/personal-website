@@ -2,7 +2,6 @@ import './cv.css';
 import { Container, Image, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import '../../index.css';
 import { icons } from '../icons/icons';
-import { CvButton } from '../buttons/CvButton';
 
 export const Cv = () => {
 
@@ -11,8 +10,8 @@ export const Cv = () => {
             <Container id='cv-text'>
             <p id='statement'><span className='span'>Thank you for looking at my CV!</span>
             I am currently looking for a position as a <span className='span'>React Developer</span>
-            <a href="../../imgs/cv-simple.pdf" download='BelenGarciaMartinez-resume.pdf'>
-                <CvButton />
+            <a href="https://github.com/93Belen/Resume/blob/main/Belen-Garcia-Martinez-resume.pdf" target='_blank' download='Belen-Garcia-Martinez-resume.pdf'>
+                Download my CV here
             </a>
             </p>
             <h2 className='span'>Languages and Tools</h2>
