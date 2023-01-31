@@ -5,12 +5,6 @@ import { GitHub } from '../buttons/github';
 import { Linkedin } from '../buttons/linkedin';
 
 export const Contact = () => {
-    const info = {
-        email: '',
-        subject: '',
-        body: ''
-    }
-
     return (
         <Container id='contact'>
             <Container id='contact-info'>
