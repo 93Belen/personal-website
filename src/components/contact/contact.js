@@ -18,14 +18,14 @@ export const Contact = () => {
                             &#128187; And don't forget to <span className='span'>connect with me</span><br/></p>
                     </Col>
                     <Col md={6} xs={12}>
-                        <Form method="post" action='mailto:belengm.dev@gmail.com' id='email-form' enctype="text/plain">
+                        <Form method="get" action='mailto:belengm.dev@gmail.com' id='email-form' enctype="text/plain">
                         <FormGroup
                     className='mb-3 input'
                     >
                         <FloatingLabel
                         label='Email'
                         >
-                        <FormControl name='email' id='email' type='text' />
+                        <FormControl id='email' type='text' />
                         </FloatingLabel>
                     </FormGroup>
                     <FormGroup
@@ -34,7 +34,7 @@ export const Contact = () => {
                         <FloatingLabel
                         label='Subject'
                         >
-                        <FormControl name='subject' id='subject' type='text' />
+                        <FormControl id='subject' type='text' />
                         </FloatingLabel>
                     </FormGroup>
                     <FormGroup
