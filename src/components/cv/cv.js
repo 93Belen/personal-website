@@ -12,7 +12,7 @@ export const Cv = () => {
         <Container id='cv'>
             <Container id='cv-text'>
             <a rel="noreferrer" href="https://github.com/93Belen/Resume/blob/main/Belen-Garcia-Martinez-resume.pdf" target='_blank' download='Belen-Garcia-Martinez-resume.pdf'>
-                Download my CV here
+                Download CV
             </a>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header id='cv-modal' closeButton>
