@@ -8,7 +8,6 @@ import { useState } from 'react';
 
 export const Contact = () => {
     const [show, setShow] = useState(false);
-    let message;
     let header;
     const [state, handleSubmit] = useForm("xyyaknaq");
 
