@@ -22,10 +22,10 @@
 }
 
 .icon{
-    width: 12%;
+    width: auto;
     height: 12%;
-    margin: 4%;
-    max-width: 50px;
+    margin: 3%;
+    max-height: 70px;
 }
 
 

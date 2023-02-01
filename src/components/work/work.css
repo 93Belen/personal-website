@@ -22,7 +22,8 @@
 }
 #blur h1{
     font-size: 3rem;
-    color: var(--orange);
+    color: var(--blue);
+    max-width: 90vw;
 }
 #blur p {
     font-size: 2rem;
@@ -66,6 +67,9 @@
     top:0; 
     left: 0;
 }
+#sql{
+    max-width: 60px;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -92,6 +96,7 @@
         font-size: 3.5rem;
         font-weight: 700;
         padding-left: 15%;
+        max-width: 70vw;
     }
     #blur h2 {
         font-size: 3rem;
