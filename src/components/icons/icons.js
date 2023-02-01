@@ -1,4 +1,3 @@
-import {Image} from 'react-bootstrap';
 
 export const icons = {
     html: <svg className='icon' viewBox="0 0 52 77" fill="none" xmlns="http://www.w3.org/2000/svg">
