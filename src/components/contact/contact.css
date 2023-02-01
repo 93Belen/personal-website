@@ -44,13 +44,13 @@
     color: var(--black);
     font-size: 2rem;
 }
-#email, #subject, #email-text {
+#email, #subject, #message {
     height: fit-content;
     width: 95%;
     font-size: 2rem;
     min-height: 65px;
 }
-#email-text{
+#message{
     height: 120px;
 }
 #submit {

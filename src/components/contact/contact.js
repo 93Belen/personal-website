@@ -3,8 +3,14 @@ import '../../index.css';
 import { Container, Form, FormGroup, FloatingLabel, FormControl, Button, Col, Row} from 'react-bootstrap';
 import { GitHub } from '../buttons/github';
 import { Linkedin } from '../buttons/linkedin';
+import { useForm, ValidationError } from '@formspree/react';
 
 export const Contact = () => {
+    const [state, handleSubmit] = useForm("xyyaknaq");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
+    
     return (
         <Container id='contact'>
             <Container id='contact-info'>
@@ -18,23 +24,17 @@ export const Contact = () => {
                             &#128187; And don't forget to <span className='span'>connect with me</span><br/></p>
                     </Col>
                     <Col md={6} xs={12}>
-                        <Form method="get" action='mailto:belengm.dev@gmail.com' id='email-form' enctype="text/plain">
+                        {/* <Form
+                        action="https://formspree.io/f/xyyaknaq"
+                        method="POST"
+                        id='email-form' enctype="text/plain">
                         <FormGroup
                     className='mb-3 input'
                     >
                         <FloatingLabel
                         label='Email'
                         >
-                        <FormControl id='email' type='text' />
-                        </FloatingLabel>
-                    </FormGroup>
-                    <FormGroup
-                    className='mb-3 input'
-                    >
-                        <FloatingLabel
-                        label='Subject'
-                        >
-                        <FormControl id='subject' type='text' />
+                        <FormControl name='email' type='email'  id='email' type='text' />
                         </FloatingLabel>
                     </FormGroup>
                     <FormGroup
@@ -43,11 +43,47 @@ export const Contact = () => {
                         <FloatingLabel
                         label='Email'
                         >
-                        <FormControl name='body' id='email-text' type='text' />
+                        <FormControl name='message' id='email-text' type='text' />
                         </FloatingLabel>
                     </FormGroup>
                     <Button id='submit' type='submit' variant='outline-warning'>Send it!</Button>
-                        </Form>
+                        </Form> */}
+                        <Form id='email-form' onSubmit={handleSubmit}>
+                            <FormGroup
+                            className='mb-3 input'
+                            >
+                                <FloatingLabel label='email' htmlFor="email">
+                            <FormControl
+                                id="email"
+                                type="email" 
+                                name="email"
+                            />
+                            <ValidationError 
+                                prefix="Email" 
+                                field="email"
+                                errors={state.errors}
+                            />
+                            </FloatingLabel>
+                            </FormGroup>
+                            <FormGroup
+                            className='mb-3 input'
+                            >
+                                <FloatingLabel label='message'>
+                                    <FormControl
+                                    id="message"
+                                    name="message"
+                                    as='textarea' />
+                                <ValidationError 
+                                prefix="Message" 
+                                field="message"
+                                errors={state.errors}
+                            />
+                                </FloatingLabel>
+                            </FormGroup>
+                            <Button id='submit' variant='outline-warning' type="submit" disabled={state.submitting}>
+                                Submit
+                            </Button>
+                            </Form>
                     </Col>
                     </Row>
                     <Row>
