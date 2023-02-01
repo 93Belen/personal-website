@@ -44,11 +44,13 @@
     color: var(--black);
     font-size: 2rem;
 }
-#email, #subject, #message {
+
+#email, #message {
     height: fit-content;
     width: 95%;
     font-size: 2rem;
     min-height: 65px;
+    padding: 5% 2% 0% 2%;
 }
 #message{
     height: 120px;
@@ -61,15 +63,26 @@
 #lat-row {
     padding-bottom: 500px;
 }
-
+.modal {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 400;
+}
+.modal-header {
+    background-color: var(--blue);
+    text-align: center;
+    font-weight: 600;
+}
+.modal-body{
+    background-color: var(--blue);
+}
 
 @media screen and (min-width: 768px) {
     #contact{
         background-size: 60vw;
     }
     #email-form {
-        margin-top: 7%;
-        margin-bottom: 7%;
+        margin-top: 5%;
     }
     #contact-info{
         width: 75vw;

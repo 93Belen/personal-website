@@ -1,15 +1,27 @@
 import './contact.css';
 import '../../index.css';
-import { Container, Form, FormGroup, FloatingLabel, FormControl, Button, Col, Row} from 'react-bootstrap';
+import { Container, Form, FormGroup, FloatingLabel, FormControl, Button, Col, Row, Modal} from 'react-bootstrap';
 import { GitHub } from '../buttons/github';
 import { Linkedin } from '../buttons/linkedin';
 import { useForm, ValidationError } from '@formspree/react';
+import { useState } from 'react';
 
 export const Contact = () => {
+    const [show, setShow] = useState(false);
+    let message;
+    let header;
     const [state, handleSubmit] = useForm("xyyaknaq");
+
   if (state.succeeded) {
-      return <p>Thanks for joining!</p>;
+      header = 'Thank you for your message! '
+
   }
+  else {
+      header = 'Sorry, something went wrong.'
+
+  }
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
     
     return (
         <Container id='contact'>
@@ -20,35 +32,15 @@ export const Contact = () => {
                         <p>&#128075; Hey! If you need a Software Developer <span className='span'>passionated</span> about the craft,
                             I am currently looking for a position as a <span className='span'>React Developer</span>. 
                             Email me at <span className='span'>belengm.dev@gmail.com</span><br/></p>
-                            <p>&#128222; Call me at <span className='span'>913-274-0955</span><br/>
-                            &#128187; And don't forget to <span className='span'>connect with me</span><br/></p>
+                            
                     </Col>
                     <Col md={6} xs={12}>
-                        {/* <Form
-                        action="https://formspree.io/f/xyyaknaq"
-                        method="POST"
-                        id='email-form' enctype="text/plain">
-                        <FormGroup
-                    className='mb-3 input'
-                    >
-                        <FloatingLabel
-                        label='Email'
-                        >
-                        <FormControl name='email' type='email'  id='email' type='text' />
-                        </FloatingLabel>
-                    </FormGroup>
-                    <FormGroup
-                    className='mb-3 input'
-                    >
-                        <FloatingLabel
-                        label='Email'
-                        >
-                        <FormControl name='message' id='email-text' type='text' />
-                        </FloatingLabel>
-                    </FormGroup>
-                    <Button id='submit' type='submit' variant='outline-warning'>Send it!</Button>
-                        </Form> */}
                         <Form id='email-form' onSubmit={handleSubmit}>
+                            <Modal className='modal' show={show} onHide={handleClose}>
+                                <Modal.Header className='modal-header' closeButton>
+                                    {header}
+                                </Modal.Header>
+                            </Modal>
                             <FormGroup
                             className='mb-3 input'
                             >
@@ -80,16 +72,17 @@ export const Contact = () => {
                             />
                                 </FloatingLabel>
                             </FormGroup>
-                            <Button id='submit' variant='outline-warning' type="submit" disabled={state.submitting}>
+                            <Button onClick={handleShow} id='submit' variant='outline-warning' type="submit" disabled={state.submitting}>
                                 Submit
                             </Button>
                             </Form>
                     </Col>
                     </Row>
                     <Row>
-                        <Col>
+                        <Col xs={12} md={6}>
+                           <p>&#128073; And don't forget to <span className='span'>connect with me</span><br/>
                             <Linkedin />
-                            <GitHub url={'https://github.com/93Belen'} />
+                            <GitHub url={'https://github.com/93Belen'} /></p>
                         </Col>
                     </Row>
                 </Container>           
