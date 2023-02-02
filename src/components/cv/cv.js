@@ -15,16 +15,17 @@ export const Cv = () => {
                 Download CV
             </a>
             <Modal show={show} onHide={handleClose}>
-                <Modal.Header id='cv-modal' closeButton>
+                <Modal.Header className='cv-modal' closeButton></Modal.Header>
+                <Modal.Body className='cv-modal'>
                     <p id='statement'><span className='span'>Thank you for checking out my CV!</span>
                     I am currently looking for a position as a <span className='span'>React Developer</span>
                     <a rel="noreferrer" href="https://github.com/93Belen/Resume/blob/main/Belen-Garcia-Martinez-resume.pdf" target='_blank' download='Belen-Garcia-Martinez-resume.pdf'>
                         Download my CV here
                     </a>
                     </p>
-                </Modal.Header>
+                </Modal.Body>
             </Modal>
-            <h2 className='blue-span'>Languages and Tools</h2>
+            <h2 className='blue-span'>My Tools</h2>
             <p>
             <OverlayTrigger
                 className='overlay'

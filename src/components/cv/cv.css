@@ -54,8 +54,6 @@
     flex-direction: column;
     font-size: 2.5rem;
     font-weight: 600;
-    padding: 3%;
-    width: 80vw;
     text-align: center;
 }
 #cv-text a {
@@ -63,15 +61,15 @@
     align-self: center;
 }
 
-#cv-modal {
+.cv-modal {
     border-bottom: none;
     font-weight: 300;
 }
-#cv-modal a {
+.cv-modal a {
     color: var(--white);
     font-weight: 600;
 }
-#cv-modal a:hover {
+.cv-modal a:hover {
     color: var(--orange)
 }
 #cv a {
@@ -92,9 +90,6 @@
     }
     #statement {
         font-weight: 600;
-        padding: 2%;
-        width: 35vw;
-        min-width: 400px;
     }
     #cv-text h2{
         font-size: 3.5rem;
