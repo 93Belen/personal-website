@@ -38,6 +38,9 @@
 #img-amercia{
     display: none;
 }
+#img-me-smile{
+    display: none;
+}
 
 @media screen and (min-width: 768px) {
     #about {
@@ -61,10 +64,19 @@
     
     #img-amercia{
         position: fixed;
-        bottom:0px;
+        bottom: -5px;
         left: 60vw;
         width: 100%;
         max-width: 500px;
+        display: block;
+    }
+    #img-me-smile{
+        position: fixed;
+        bottom: 0px;
+        left: 50vw;
+        z-index: 0;
+        width: 60%;
+        max-width: 350px;
         display: block;
     }
     #textContainer h1{

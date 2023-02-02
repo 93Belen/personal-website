@@ -69,6 +69,7 @@ export const About = () => {
             <p id='last-sentence'>I am seeking a full-time position as a <span className='span'>React Developer</span>. Connect with me in LinkedIn!
             <Linkedin /></p>
             </Container>
+            <Image id='img-me-smile' src={require('../../imgs/me-smile.png')} /> 
             <Image id='img-amercia' src={require('../../imgs/america.png')} />
         </Container>
     )
