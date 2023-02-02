@@ -39,84 +39,52 @@
 #row{
     height: 60%;
 }
-@keyframes star-1 {
+ @keyframes star-1 {
     0% {
         transform: translate(100vw, 0vh);
-        opacity: 0.7;
+        opacity: 0.1;
     }
     2% {
-        opacity: 1;
+        opacity: 0.2;
     }
     5% {
-        opacity: 0.7;
+        opacity: 0.6;
     }
     10% {
-        transform: translate(0vw, 100vh);
+        transform: translate(0vw, 30vh);
+        opacity: 0.1;
+    }
+    15%{
+        transform: translate(0vw, 30vh);
         opacity: 0;
     }
     100% {
-        transform: translate(0vw, 100vh);
-        opacity: 0;
-    }
-}
-@keyframes star-2 {
-    0% {
-        transform: translate(90vw, 0vh);
-        opacity: 0.5;
-    }
-    2% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 0.7;
-    }
-    10% {
-        transform: translate(0vw, 90vh);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(0vw, 90vh);
+        transform: translate(0vw, 30vh);
         opacity: 0;
     }
 }
 
-@keyframes star-3 {
-    0% {
-        transform: translate(100vw, 10vh);
-        opacity: 0.7;
-    }
-    2% {
-        opacity: 1;
-    }
-    5% {
-        opacity: 0.7;
-    }
-    10% {
-        transform: translate(0vw, 110vh);
-        opacity: 0;
-    }
-    100% {
-        transform: translate(0vw, 110vh);
-        opacity: 0;
-    }
-}
 @keyframes star-4 {
     0% {
-        transform: translate(60vw, 0vh);
-        opacity: 0.7;
+        transform: translate(100vw, -20vh);
+        opacity: 0.1;
     }
     2% {
-        opacity: 1;
+        opacity: 0.2;
     }
     5% {
-        opacity: 0.7;
+        opacity: 0.6;
     }
     10% {
-        transform: translate(-10vw, 60vh);
+        transform: translate(0vw, 10vh);
+        opacity: 0.1;
+    }
+    15%{
+        transform: translate(0vw, 10vh);
         opacity: 0;
     }
     100% {
-        transform: translate(-10vw, 60vh);
+        transform: translate(0vw, 10vh);
         opacity: 0;
     }
 }
@@ -125,7 +93,7 @@
     position: absolute;
     animation-name: star-1;
     animation-delay: 2s;
-    animation-duration: 12s;
+    animation-duration: 6s;
     visibility: none;
     opacity: 0;
     z-index: 0;
@@ -135,31 +103,22 @@
 }
 #star-2 {
     position: absolute;
-    animation-name: star-2;
-    animation-delay: 8s;
-    animation-duration: 12s;
     visibility: none;
     opacity: 0;
     z-index: 0;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
 }
 #star-3 {
     position: absolute;
-    animation-name: star-3;
-    animation-delay: 21s;
-    animation-duration: 12s;
     visibility: none;
     opacity: 0;
     z-index: 0;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+
 }
 #star-4 {
     position: absolute;
     animation-name: star-4;
-    animation-delay: 27s;
-    animation-duration: 12s;
+    animation-delay: 7s;
+    animation-duration: 6s;
     visibility: none;
     opacity: 0;
     z-index: 0;
@@ -170,6 +129,133 @@
 
 
 @media screen and (min-width: 768px) {
+    @keyframes star-1 {
+        0% {
+            transform: translate(100vw, 0vh);
+            opacity: 0.7;
+        }
+        2% {
+            opacity: 1;
+        }
+        5% {
+            opacity: 0.7;
+        }
+        10% {
+            transform: translate(0vw, 100vh);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0vw, 100vh);
+            opacity: 0;
+        }
+    }
+    @keyframes star-2 {
+        0% {
+            transform: translate(90vw, 0vh);
+            opacity: 0.5;
+        }
+        2% {
+            opacity: 1;
+        }
+        5% {
+            opacity: 0.7;
+        }
+        10% {
+            transform: translate(0vw, 90vh);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0vw, 90vh);
+            opacity: 0;
+        }
+    }
+    
+    @keyframes star-3 {
+        0% {
+            transform: translate(100vw, 10vh);
+            opacity: 0.7;
+        }
+        2% {
+            opacity: 1;
+        }
+        5% {
+            opacity: 0.7;
+        }
+        10% {
+            transform: translate(0vw, 110vh);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0vw, 110vh);
+            opacity: 0;
+        }
+    }
+    @keyframes star-4 {
+        0% {
+            transform: translate(60vw, 0vh);
+            opacity: 0.7;
+        }
+        2% {
+            opacity: 1;
+        }
+        5% {
+            opacity: 0.7;
+        }
+        10% {
+            transform: translate(-10vw, 60vh);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(-10vw, 60vh);
+            opacity: 0;
+        }
+    }
+
+    #star-1 {
+        position: absolute;
+        animation-name: star-1;
+        animation-delay: 2s;
+        animation-duration: 12s;
+        visibility: none;
+        opacity: 0;
+        z-index: 0;
+        animation-timing-function: linear;
+        animation-iteration-count: 2;
+    
+    }
+    #star-2 {
+        position: absolute;
+        animation-name: star-2;
+        animation-delay: 8s;
+        animation-duration: 12s;
+        visibility: none;
+        opacity: 0;
+        z-index: 0;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    #star-3 {
+        position: absolute;
+        animation-name: star-3;
+        animation-delay: 21s;
+        animation-duration: 12s;
+        visibility: none;
+        opacity: 0;
+        z-index: 0;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    #star-4 {
+        position: absolute;
+        animation-name: star-4;
+        animation-delay: 27s;
+        animation-duration: 12s;
+        visibility: none;
+        opacity: 0;
+        z-index: 0;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
     #img-me {
         left: 48%;
         max-width: 50vw;
