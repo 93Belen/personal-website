@@ -71,13 +71,10 @@
         display: block;
     }
     #img-me-smile{
-        position: fixed;
-        bottom: 0px;
-        left: 50vw;
-        z-index: 0;
-        width: 60%;
-        max-width: 350px;
+        max-height: 150px;
         display: block;
+        width: auto;
+        height: 100%;
     }
     #textContainer h1{
         font-size: 4rem;

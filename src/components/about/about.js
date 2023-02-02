@@ -1,4 +1,4 @@
-import { Container, Image } from "react-bootstrap"
+import { Container, Image, Col, Row } from "react-bootstrap"
 import {Linkedin} from '../buttons/linkedin'
 import './about.css'
 import '../../index.css';
@@ -51,7 +51,10 @@ export const About = () => {
             </svg>
             </div>
             <Container id='textContainer'>
-            <h1 id='h1'> &#128075; Hi! My name is <span className='span'>Belén</span>, a <span className='span'>Software Developer</span> from Spain, currently living in <span className='span'>Kansas City</span>.</h1>
+            <Row style={{width: '77vw', maxHeight: '250px'}}>
+            <Col md={10} sx={12}><h1 id='h1'> Hi! My name is <span className='span'>Belén</span>, a <span className='span'>Software Developer</span> from Spain, currently living in <span className='span'>Kansas City</span>.</h1></Col>
+            <Col md={2} sx={0}><Image id='img-me-smile' src={require('../../imgs/me-smile.png')} /> </Col>
+            </Row>
             <p>After studying <span className='span'>Philosophy</span> at the University of Granada, I moved to <span className='span'>London</span>.</p>
             <p>Looking for opportunities to better my life, I flee the economic struggles and work desert of <span className='span'>Spain</span>, not knowing a word of English and having almost no work experience.</p>
             <p>Two years later, I was fluent in <span className='span'>English</span> and had developed a strong work ethic and a career in retail.</p>
@@ -69,7 +72,6 @@ export const About = () => {
             <p id='last-sentence'>I am seeking a full-time position as a <span className='span'>React Developer</span>. Connect with me in LinkedIn!
             <Linkedin /></p>
             </Container>
-            <Image id='img-me-smile' src={require('../../imgs/me-smile.png')} /> 
             <Image id='img-amercia' src={require('../../imgs/america.png')} />
         </Container>
     )
