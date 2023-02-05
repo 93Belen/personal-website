@@ -72,7 +72,7 @@ export const Contact = () => {
                 <Container id='text-container'>
                     <Row>
                     <Col md={6} xs={12}>
-                        <p>&#128075; Hey! If you need a Software Developer <span className='span'>passionated</span> about the craft,
+                        <p>&#128075; Hey! If you need a Software Developer <span className='span'>passionate</span> about the craft,
                             I am currently looking for a position as a <span className='span'>React Developer</span>. 
                             Email me at <span className='span'>belengm.dev@gmail.com</span><br/></p>
                             
