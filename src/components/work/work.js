@@ -107,8 +107,8 @@ export const Work = () => {
        <Carousel.Item>
         <h1>KCB<br/> {renderTech(['React', "Redux", "Git", "Java", "MySQL"])}</h1>
                 <p>Website where, as a business owner who is part of a minority, you can create an account and register your businesses into a database. 
-                    And as a non-business owner, you can create an account and look for minority owned businesses in the Kansas City area. 
-                    If you create an account you can also add businesses to your personal liked list. If you decide not to create an account, you will still be able to look for businesses, but wont be able to create a liked list.</p>
+                    And as a non-business owner, you can create an account and look for minority owned businesses in the Kansas City area and like them. 
+                    If you decide not to create an account, you will still be able to look for businesses, but wont be able to create a Like list.</p>
                     <p id='disclaimer'>This is a group project and my responsabilities are:</p>
                     <ul id='list'>
                         <li>Authorization with Spring Security</li>
