@@ -71,8 +71,8 @@ export const Work = () => {
       <Carousel.Item>
         <h1>WalkKit Web & App<br/> {renderTech(['HTML', 'CSS', 'JavaScript', "React", "Git"])}</h1>
                 <p>Website and App that show you the best times to walk your dog based on the weather conditions.
-                The Web version is built with Vanilla JavaScript, and it gives you a sumary of the best times for the whole week, have a responsive design, and follows accesibility and best practices.
-                While the App is built with React Native, and it tells you whether the conditions are good or not, for each hour of the same day.</p>
+ The Web version is built with Vanilla JavaScript, and it gives you a summary of the best times for the whole week, has a responsive design, and follows accessibility and best practices.
+ While the App is built with React Native, and it tells you whether the conditions are good or not, for each hour of the same day.</p>
                 <p><span className='span'>Check out the video below</span> to see the web version in action. In this video I explain how I made it, the problems that I encountered, how I solved them, and what I learned from them.</p>
                     <Container id='tech-icons'>
                     </Container>
@@ -88,8 +88,8 @@ export const Work = () => {
       </Carousel.Item>
       <Carousel.Item>
         <h1>LegaAlly<br/> {renderTech(["JavaScript", 'React', "Redux", "Git", "Java"])}</h1>
-                <p>Website that provides you with information about abortion rights in the US, based in your particular case.
-                The back-end is built with Spring and Java, and calls a third party API. The front-end is built with React, Redux and React-router-dom.
+                <p>Website that provides you with information about abortion rights in the US, based on your particular case.
+ The back end is built with Spring and Java and calls a third-party API. The front end is built with React, Redux and React-router-dom.
                 </p>
                 <p><span className='span'>Check out the video below</span> to see this project in action. In this video I explain how I made it, the problems that I encountered, how I solved them, and what I learned from them.</p>
                 <Container id='tech-icons'>
