@@ -117,6 +117,7 @@ export const Work = () => {
                         <li>Responsive design</li>
                         <li>Some front-end functionality</li>
                     </ul>
+                    <p>See this project here! <a href='https://kcbusiness.dev'>kcbusiness.dev</a></p>
                 <Container id='tech-icons'>
                     </Container>
                 <Container id='githubButton'>
