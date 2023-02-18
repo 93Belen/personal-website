@@ -111,11 +111,13 @@ export const Work = () => {
                     If you decide not to create an account, you will still be able to look for businesses, but wont be able to create a Like list.</p>
                     <p id='disclaimer'>This is a group project and my responsabilities are:</p>
                     <ul id='list'>
-                        <li>Authorization with Spring Security</li>
-                        <li>Designed front-end</li>
-                        <li>Built React and Redux</li>
-                        <li>Responsive design</li>
-                        <li>Some front-end functionality</li>
+                        <li>Log-in and Sign-up functionality (Front and Back-end)</li>
+                        <li>Design and built React and React-Bootstrap skeleton, and Redux logic</li>
+                        <li>Different buttons functionalities (front-end)</li>
+                        <li>Navigational and redirect  functionalities with React-router-dom and Private Routes</li>
+                        <li>Coded half of the mobile-friendly responsive design</li>
+                        <li>Unit testing with Jest</li>
+                        <li>Deployed Front and Back end</li>
                     </ul>
                     <p>Click here to see the project live! <a style={{textDecoration: 'none', color: 'var(--orange)'}} target='_blank' rel="noreferrer" href='https://kcbusiness.dev'>kcbusiness.dev</a></p>
                 <Container id='tech-icons'>
