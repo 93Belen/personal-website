@@ -120,8 +120,12 @@ export const Work = () => {
                     <p>Click here to see the project live! <a style={{textDecoration: 'none', color: 'var(--orange)'}} target='_blank' rel="noreferrer" href='https://kcbusiness.dev'>kcbusiness.dev</a></p>
                 <Container id='tech-icons'>
                     </Container>
+                    <Container className='video-container'>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/N9Pduhi7Oi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </Container>
                 <Container id='githubButton'>
                     <Col>
+                    <Row><YouTube url='https://www.youtube.com/watch?v=N9Pduhi7Oi0' /></Row>
                     <Row><GitHub url={'https://github.com/stars/93Belen/lists/kcb'} /></Row>
                     </Col>
                     
