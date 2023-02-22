@@ -114,6 +114,7 @@ export const Work = () => {
                         <li>Log-in and Sign-up functionality (Front and Back-end)</li>
                         <li>Design and built React and React-Bootstrap skeleton, and Redux logic</li>
                         <li>Different buttons functionalities (front-end)</li>
+                        <li>Search functionality using knowledge of data structures and algorithms</li>
                         <li>Navigational and redirect  functionalities with React-router-dom and Private Routes</li>
                         <li>Coded half of the mobile-friendly responsive design</li>
                         <li>Unit testing with Jest</li>
