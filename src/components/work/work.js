@@ -68,6 +68,36 @@ export const Work = () => {
         <Container id='work'>
             <Container id='blur'>
             <Carousel id='carousel' variant='light' interval={null}>
+            <Carousel.Item>
+        <h1>KCB<br/> {renderTech(['React', "Redux", "Git", "Java", "MySQL"])}</h1>
+                <p>Website where, as a business owner who is part of a minority, you can create an account and register your businesses into a database. 
+                    And as a non-business owner, you can create an account to look for minority owned businesses in the Kansas City area and Like them. 
+                    If you decide not to create an account, you will still be able to look for businesses, but wont be able to create a Like list.</p>
+                    <p id='disclaimer'>This is a group project and my responsabilities are:</p>
+                    <ul id='list'>
+                        <li>Log-in and Sign-up functionality (Front and Back-end)</li>
+                        <li>Design and built React and React-Bootstrap skeleton, and Redux logic</li>
+                        <li>Different buttons functionalities (front-end)</li>
+                        <li>Search functionality using knowledge of data structures and algorithms</li>
+                        <li>Navigational and redirect  functionalities with React-router-dom and Private Routes</li>
+                        <li>Coded half of the mobile-friendly responsive design</li>
+                        <li>Unit testing with Jest</li>
+                        <li>Deployed Front and Back end</li>
+                    </ul>
+                    <p>Click here to see the project live! <a style={{textDecoration: 'none', color: 'var(--orange)'}} target='_blank' rel="noreferrer" href='https://kcbusiness.dev'>kcbusiness.dev</a></p>
+                <Container id='tech-icons'>
+                    </Container>
+                    <Container className='video-container'>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ZHQ6mT0hFgY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </Container>
+                <Container id='githubButton'>
+                    <Col>
+                    <Row><YouTube url='https://youtu.be/ZHQ6mT0hFgY' /></Row>
+                    <Row><GitHub url={'https://github.com/stars/93Belen/lists/kcb'} /></Row>
+                    </Col>
+                    
+                </Container>
+      </Carousel.Item>
       <Carousel.Item>
         <h1>WalkKit Web & App<br/> {renderTech(['HTML', 'CSS', 'JavaScript', "React", "Git"])}</h1>
                 <p>Website and App that show you the best times to walk your dog based on the weather conditions.
@@ -102,36 +132,6 @@ export const Work = () => {
                         <Row><YouTube url='https://youtu.be/6LPBX8z4vxE?t=213' /></Row>
                         <Row><GitHub url={'https://github.com/stars/93Belen/lists/legally'} /></Row>
                     </Col>       
-                </Container>
-      </Carousel.Item>
-       <Carousel.Item>
-        <h1>KCB<br/> {renderTech(['React', "Redux", "Git", "Java", "MySQL"])}</h1>
-                <p>Website where, as a business owner who is part of a minority, you can create an account and register your businesses into a database. 
-                    And as a non-business owner, you can create an account to look for minority owned businesses in the Kansas City area and Like them. 
-                    If you decide not to create an account, you will still be able to look for businesses, but wont be able to create a Like list.</p>
-                    <p id='disclaimer'>This is a group project and my responsabilities are:</p>
-                    <ul id='list'>
-                        <li>Log-in and Sign-up functionality (Front and Back-end)</li>
-                        <li>Design and built React and React-Bootstrap skeleton, and Redux logic</li>
-                        <li>Different buttons functionalities (front-end)</li>
-                        <li>Search functionality using knowledge of data structures and algorithms</li>
-                        <li>Navigational and redirect  functionalities with React-router-dom and Private Routes</li>
-                        <li>Coded half of the mobile-friendly responsive design</li>
-                        <li>Unit testing with Jest</li>
-                        <li>Deployed Front and Back end</li>
-                    </ul>
-                    <p>Click here to see the project live! <a style={{textDecoration: 'none', color: 'var(--orange)'}} target='_blank' rel="noreferrer" href='https://kcbusiness.dev'>kcbusiness.dev</a></p>
-                <Container id='tech-icons'>
-                    </Container>
-                    <Container className='video-container'>
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/N9Pduhi7Oi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </Container>
-                <Container id='githubButton'>
-                    <Col>
-                    <Row><YouTube url='https://www.youtube.com/watch?v=N9Pduhi7Oi0' /></Row>
-                    <Row><GitHub url={'https://github.com/stars/93Belen/lists/kcb'} /></Row>
-                    </Col>
-                    
                 </Container>
       </Carousel.Item>
     </Carousel>
