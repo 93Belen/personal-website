@@ -69,6 +69,22 @@ export const Work = () => {
             <Container id='blur'>
             <Carousel id='carousel' variant='light' interval={null}>
             <Carousel.Item>
+                <h1>Artist Website<br/> {renderTech(['Redux', 'JavaScript', "React", "Git"])}</h1>
+                <p>Website where an artist can sell his work. I built this project usin Next.js 13, Tailwind CSS, and I deployed it with Vercel. I used Stripe for the payment process.</p>
+                <p>Click here to see the project live! <a style={{textDecoration: 'none', color: 'var(--orange)'}} target='_blank' rel="noreferrer" href='https://artist-porfolio.vercel.app'>Artist Website</a></p>
+                    <Container id='tech-icons'>
+                    </Container>
+                    <Container className='video-container'>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Tt6ZlcI6tCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </Container>
+                <Container id='githubButton'>
+                    <Col>
+                        <Row><YouTube url="https://youtu.be/Tt6ZlcI6tCc" /></Row>
+                        <Row><GitHub url={'https://github.com/93Belen/artist-porfolio'} /></Row>
+                    </Col>
+                </Container>
+      </Carousel.Item>
+            <Carousel.Item>
         <h1>KCB<br/> {renderTech(['React', "Redux", "Git", "Java", "MySQL"])}</h1>
                 <p>Website where, as a business owner who is part of a minority, you can create an account and register your businesses into a database. 
                     And as a non-business owner, you can create an account to look for minority owned businesses in the Kansas City area and Like them. 
@@ -96,24 +112,6 @@ export const Work = () => {
                     <Row><GitHub url={'https://github.com/stars/93Belen/lists/kcb'} /></Row>
                     </Col>
                     
-                </Container>
-      </Carousel.Item>
-      <Carousel.Item>
-        <h1>WalkKit Web & App<br/> {renderTech(['HTML', 'CSS', 'JavaScript', "React", "Git"])}</h1>
-                <p>Website and App that show you the best times to walk your dog based on the weather conditions.
-                The Web version is built with Vanilla JavaScript, it gives you a summary of the best times for the whole week, has a responsive design, and follows accessibility best practices.
-                On the other hand, the App is built with React Native and it tells you whether the conditions are good or not for each hour of the same day.</p>
-                <p><span className='span'>Check out the video below</span> to see the web version in action. In this video I explain how I made it, the problems that I encountered, how I solved them, and what I learned from them.</p>
-                    <Container id='tech-icons'>
-                    </Container>
-                    <Container className='video-container'>
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6LPBX8z4vxE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </Container>
-                <Container id='githubButton'>
-                    <Col>
-                        <Row><YouTube url="https://youtu.be/6LPBX8z4vxE" /></Row>
-                        <Row><GitHub url={'https://github.com/stars/93Belen/lists/walkkit-web-app'} /></Row>
-                    </Col>
                 </Container>
       </Carousel.Item>
       <Carousel.Item>
