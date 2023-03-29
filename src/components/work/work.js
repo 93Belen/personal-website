@@ -46,6 +46,12 @@ export const Work = () => {
                 case 'Postman':
                     icon = icons.postman;
                 break;
+                case 'Next JS':
+                    icon = icons.nextjs;
+                break;
+                case 'Tailwind CSS':
+                    icon = icons.tailwind;
+                break;
                 default:
                 
                 
@@ -69,7 +75,7 @@ export const Work = () => {
             <Container id='blur'>
             <Carousel id='carousel' variant='light' interval={null}>
             <Carousel.Item>
-                <h1>Artist Website<br/> {renderTech(['Redux', 'JavaScript', "React", "Git"])}</h1>
+                <h1>Artist Website<br/> {renderTech(['Redux', "React", "Next JS", "Tailwind CSS"])}</h1>
                 <p>Website where an artist can sell his work. I built this project usin Next.js 13, Tailwind CSS, and I deployed it with Vercel. I used Stripe for the payment process.</p>
                 <p>Click here to see the project live! <a style={{textDecoration: 'none', color: 'var(--orange)'}} target='_blank' rel="noreferrer" href='https://artist-porfolio.vercel.app'>Artist Website</a></p>
                     <Container id='tech-icons'>

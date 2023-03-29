@@ -27,22 +27,6 @@ export const Cv = () => {
             </Modal>
             <h2 className='blue-span'>My Tools</h2>
             <p>
-            <OverlayTrigger
-                className='overlay'
-                placement='right'
-                delay={{ show: 250, hide: 400 }}
-                overlay={<Tooltip id="button-tooltip-2">HTML</Tooltip>}
-                >
-                    {icons.html}
-                </OverlayTrigger>
-                <OverlayTrigger
-                className='overlay'
-                placement='right'
-                delay={{ show: 250, hide: 400 }}
-                overlay={<Tooltip id="button-tooltip-2">CSS</Tooltip>}
-                >
-                    {icons.css}
-                </OverlayTrigger>
                 <OverlayTrigger
                 className='overlay'
                 placement='right'
@@ -67,11 +51,27 @@ export const Cv = () => {
                 >
                     {icons.redux}
                 </OverlayTrigger>
+                    <OverlayTrigger
+                className='overlay'
+                placement='right'
+                delay={{ show: 250, hide: 400 }}
+                overlay={<Tooltip id="button-tooltip-2">Next JS</Tooltip>}
+                >
+                    {icons.nextjs}
+                </OverlayTrigger>
                 <OverlayTrigger
                 className='overlay'
                 placement='right'
                 delay={{ show: 250, hide: 400 }}
-                overlay={<Tooltip id="button-tooltip-2">React-Bootstrap</Tooltip>}
+                overlay={<Tooltip id="button-tooltip-2">Tailwind CSS</Tooltip>}
+                >
+                    {icons.tailwind}
+                </OverlayTrigger>
+                <OverlayTrigger
+                className='overlay'
+                placement='right'
+                delay={{ show: 250, hide: 400 }}
+                overlay={<Tooltip id="button-tooltip-2">React Bootstrap</Tooltip>}
                 >
                     {icons.bootstrap}
                 </OverlayTrigger>
