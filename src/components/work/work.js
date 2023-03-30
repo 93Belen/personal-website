@@ -121,21 +121,19 @@ export const Work = () => {
                 </Container>
       </Carousel.Item>
       <Carousel.Item>
-        <h1>LegaAlly<br/> {renderTech(["JavaScript", 'React', "Redux", "Git", "Java"])}</h1>
-                <p>Website that provides you with information about abortion rights in the US, based on your particular case.
- The back end is built with Spring and Java and calls a third-party API. The front end is built with React, Redux and React-router-dom.
-                </p>
-                <p><span className='span'>Check out the video below</span> to see this project in action. In this video I explain how I made it, the problems that I encountered, how I solved them, and what I learned from them.</p>
-                <Container id='tech-icons'>
+                <h1>Sushi Restaurant<br/> {renderTech(['Redux', "React", "Next JS", "Tailwind CSS"])}</h1>
+                <p>Website for a Sushi Restaurant. I built this project usin Next.js 13, Tailwind CSS, and I deployed it with Vercel. I used Stripe for the payment process.</p>
+                <p>This project is still in progress but you can see it live here! <a style={{textDecoration: 'none', color: 'var(--orange)'}} target='_blank' rel="noreferrer" href='https://sushi-web-six.vercel.app'>Sushi Restaurant</a></p>
+                    <Container id='tech-icons'>
                     </Container>
                     <Container className='video-container'>
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/6LPBX8z4vxE?start=212" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </Container>
+                   
+                </Container>
                 <Container id='githubButton'>
                     <Col>
-                        <Row><YouTube url='https://youtu.be/6LPBX8z4vxE?t=213' /></Row>
-                        <Row><GitHub url={'https://github.com/stars/93Belen/lists/legally'} /></Row>
-                    </Col>       
+                        <Row></Row>
+                        <Row><GitHub url={'https://github.com/93Belen/sushi-web'} /></Row>
+                    </Col>
                 </Container>
       </Carousel.Item>
     </Carousel>
